@@ -1,0 +1,24 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "extends": ["airbnb", "airbnb-typescript"],
+    "overrides": [
+    ],
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "rules": {
+        "linebreak-style": "off",
+        "no-console": "off",
+        "import/named": "off",
+        "import/extensions": "off",
+        "no-unused-vars": "warn",
+        "consistent-return": "off",
+        "prefer-destructuring": "off",
+        "no-undef": "warn",
+        "no-else-return": "off"
+    }
+}
