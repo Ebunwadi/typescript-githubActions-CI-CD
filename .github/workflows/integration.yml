@@ -39,11 +39,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-        env:
-          - DATABASE_URI=$DATABASE_URI
-          - PORT=$PORT
-          - ACCESS_TOKEN_SECRET=$ACCESS_TOKEN_SECRET
-          - REFRESH_TOKEN_SECRET=$REFRESH_TOKEN_SECRET
+      - name: create env files
+        run: echo "${{ secrets.ENV_FILE }}" > .env
       - run: npm i
       - run: npm run test
 
