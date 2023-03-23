@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-        environment:
+        env:
           - DATABASE_URI: $DATABASE_URI
           - PORT: $PORT
           - ACCESS_TOKEN_SECRET: $ACCESS_TOKEN_SECRET
