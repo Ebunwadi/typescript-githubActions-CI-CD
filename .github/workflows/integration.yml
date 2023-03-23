@@ -40,7 +40,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
       - name: create env files
-        run: echo "${{ secrets.ENV_FILE }}" > .env
+        run: echo "${{ secrets.ENVFILE }}" > .env
       - run: npm i
       - run: npm run test
 
